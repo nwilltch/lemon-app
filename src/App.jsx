@@ -8,9 +8,22 @@ function App() {
 
   return (
     <>
-      <div>
-         Lemon App
-       </div>
+      <header>
+         <div>Logo</div>
+         <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Reservation</li>
+            <li>Order online</li>
+            <li>Login</li>
+          </ul>
+         </nav>
+      </header>
+      <main>
+      </main>
+      <footer></footer>
     </>
   )
 }
