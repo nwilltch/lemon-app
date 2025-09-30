@@ -1,31 +1,27 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Route, Routes } from 'react-router'
 import './App.css'
+import HomePage from './pages/HomePage'
+import MenuPage from './pages/MenuPage'
+import ReservationsPage from './pages/ReservationsPage'
+import OrderPage from './pages/OrderPage'
+import AboutPage from './pages/AboutPage'
+import LoginPage from './pages/LoginPage'
+import MainLayout from './layouts/MainLayout'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
   return (
-    <>
-      <header>
-         <div>Logo</div>
-         <nav>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Reservation</li>
-            <li>Order online</li>
-            <li>Login</li>
-          </ul>
-         </nav>
-      </header>
-      <main>
-      </main>
-      <footer></footer>
-    </>
+   <Routes>
+      <Route element={<MainLayout />}>
+       <Route index element={<HomePage />} />
+       <Route path="menu" element={<MenuPage />} />   
+       <Route path="reservations" element={<ReservationsPage />} /> 
+       <Route path="order" element={<OrderPage />} /> 
+       <Route path="about" element={<AboutPage />} />
+       <Route path="login" element={<LoginPage />} /> 
+      </Route>
+   </Routes>
   )
 }
-
 export default App
