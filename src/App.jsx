@@ -4,7 +4,7 @@ import './App.css'
 import HomePage from './pages/HomePage'
 import MenuPage from './pages/MenuPage'
 import ReservationsPage from './pages/ReservationsPage'
-import OrderPage from './pages/OrderPage'
+import BookingPage from './pages/BookingPage'
 import AboutPage from './pages/AboutPage'
 import LoginPage from './pages/LoginPage'
 import MainLayout from './layouts/MainLayout'
@@ -17,7 +17,7 @@ function App() {
        <Route index element={<HomePage />} />
        <Route path="menu" element={<MenuPage />} />   
        <Route path="reservations" element={<ReservationsPage />} /> 
-       <Route path="order" element={<OrderPage />} /> 
+       <Route path="booking" element={<BookingPage />} /> 
        <Route path="about" element={<AboutPage />} />
        <Route path="login" element={<LoginPage />} /> 
       </Route>
