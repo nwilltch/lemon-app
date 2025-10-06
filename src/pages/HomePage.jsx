@@ -6,10 +6,10 @@ import Testimonials from "../components/Testimonials";
 export default function HomePage(){
     return(
         <>
-         <Hero />
-         <Hightlight />
-         <Testimonials />
-         <About />
+          <Hero />
+          <Hightlight />
+          <Testimonials />
+          <About /> 
         </>
     )
 }

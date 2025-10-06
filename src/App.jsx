@@ -8,6 +8,7 @@ import BookingPage from './pages/BookingPage'
 import AboutPage from './pages/AboutPage'
 import LoginPage from './pages/LoginPage'
 import MainLayout from './layouts/MainLayout'
+import BookingConfirmedPage from './pages/BookingConfirmedPage'
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
        <Route path="menu" element={<MenuPage />} />   
        <Route path="reservations" element={<ReservationsPage />} /> 
        <Route path="booking" element={<BookingPage />} /> 
+       <Route path="booking_confirmation" element={<BookingConfirmedPage />} /> 
        <Route path="about" element={<AboutPage />} />
        <Route path="login" element={<LoginPage />} /> 
       </Route>

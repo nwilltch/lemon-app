@@ -25,7 +25,7 @@ export default function Testimonials(){
             image: Avatar3
         },
           {
-            profil: "profil1",
+            profil: "profil4",
             rating: 4,
             review: "review 4",
             image: Avatar4
@@ -33,14 +33,20 @@ export default function Testimonials(){
 
     ]
     return(
-           <section className="py-4 bg-[#EDEFEE] mt-[60px]">
-                <div className="w-2/3 mx-auto px-[40px] py-[25px] h-[380px]">
+      <>
+      
+       <section className=" sm:py-4 sm:mt-[60px]">
+                <div className="lg:w-2/3 px-4 sm:mx-auto lg:px-[40px] py-[25px]">
                    
-                    <h1 className="flex-1 font-markazi font-bold text-center text-[30pt]"> Testimonials</h1>
-                    <section className="grid grid-cols-4 justify-between mt-[40px]">
-                                     {testimonials.map( testimonial => <Testimonial {...testimonial} />)}
+                    <h1 className="font-markazi font-bold text-center text-[30pt] py-2"> Testimonials</h1>
+                    <section className="sm:grid sm:grid-cols-4 sm:justify-between sm:mt-[40px]">
+                                     {testimonials.map( testimonial => <Testimonial key={testimonial.profil} {...testimonial} />)}
                     </section>
                 </div>
             </section>
+              
+      
+      </>
+          
     )
 }

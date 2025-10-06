@@ -3,6 +3,7 @@ import Dessert from  '../assets/dessert.jpg'
 import Salad from  '../assets/salad.jpg'
 import Cake from  '../assets/cake.jpg'
 import { Menu } from "../ui/Menu";
+import Categories from "../ui/Categories";
 
 export default function Hightlight(){
     const menus = [
@@ -27,13 +28,14 @@ export default function Hightlight(){
     ]
     return(
          <section className="py-4">
-                   <div className="w-2/3 mx-auto px-[40px] py-[25px] h-[448px] gap-10">
-                        <div className="flex items-center">
-                            <h1 className="flex-1 font-markazi font-bold text-[30pt]"> This week specials</h1>
-                            <Button>Online Menu</Button>
+                   <div className="lg:w-2/3 mx-auto">
+                        <div className="sm:hidden"><Categories /></div>
+                        <div className="sm:flex items-center">
+                            <h1 className="sm:flex-1 font-markazi font-bold text-[30pt] p-2"> This week specials</h1>
+                            <div className="hidden sm:block"><Button>Online Menu</Button></div>
                         </div>
-                        <section className="grid grid-cols-3 justify-between">
-                             {menus.map( menu => <Menu {...menu} />)}
+                        <section className="sm:grid sm:grid-cols-3 justify-around">
+                             {menus.map( menu => <Menu key={menu.name} {...menu} />)}
                         </section>
                    </div>
                </section>
