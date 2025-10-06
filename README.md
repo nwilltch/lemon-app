@@ -1,11 +1,12 @@
-# React + Vite
+# Final Capstone project
+This is the final project for creating a react app based on coursera react developper certificat.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# stack
+ we use: 
+- React pwer with vite
+- Tailwind CSS
+- vitest and testing-library/react  for testing.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## React Compiler
 
